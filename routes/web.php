@@ -23,4 +23,23 @@ Route::get('/', function () {
     return view('home', $data);
 });
 
+Route::get('/comics/{id}', function ($id) {
+
+    $data = [
+        'comics' => config('db.comics'),
+        'links' => config('db.links'),
+        'merhandises' => config('db.merhandises'),
+        'socials' => config('db.socials')
+    ];
+    $comics = config('db.comics');
+    if ($id >= 0 && $id < count($comics)) {
+        $comic = $comics[$id];
+        return view('products.comic', compact('comic'), $data);
+    } else {
+        abort('404');
+    }
+
+})->name('products.comic');
+
+
 

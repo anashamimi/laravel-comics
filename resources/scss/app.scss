@@ -126,3 +126,14 @@ ul{
         cursor: pointer;
     }
 }
+
+.ah-cover{
+    height: 50px;
+    position: relative;
+
+    img{
+        position: absolute;
+        bottom: 20px;
+        width: 150px;
+    }
+}
