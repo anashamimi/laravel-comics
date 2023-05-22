@@ -8,3 +8,19 @@ $fa-font-path: "../fonts/webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import '~bootstrap/scss/bootstrap';
+
+ul{
+    list-style: none;
+}
+
+.ah-jumbotron{
+    height: 20rem;
+    background-image: url('../img/jumbotron.jpg');
+    background-size: cover;
+
+    img{
+        height: 100%;
+        width: 100%;
+
+    }
+}
