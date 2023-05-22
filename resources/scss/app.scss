@@ -9,6 +9,52 @@ $fa-font-path: "../fonts/webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
+body{
+    background-color: #1c1c1c;
+    color: white;
+}
+
+header{
+
+    background-color: white;
+    color: black;
+
+    .ah-height{
+        height: 7rem;
+    }
+
+    img{
+        height: 100%;
+    }
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+
+    li{
+        cursor: pointer;
+        margin-bottom: 0;
+
+
+
+
+        div{
+            padding: 41.5px 0;
+            transition: color 0.5s, border-bottom 0.2s;
+            &:hover{
+                border-bottom: 5px solid rgba(var(--bs-primary-rgb));
+                color: rgba(var(--bs-primary-rgb));
+            }
+        }
+
+    }
+}
+
+.active{
+    color: rgba(var(--bs-primary-rgb));
+}
+
 ul{
     list-style: none;
 }
@@ -38,4 +84,45 @@ ul{
 
 .ah-current{
     margin-top: -15px;
+}
+
+footer{
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+p{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 0.5rem;
+
+    p{
+        font-size: 0.8rem;
+        padding: 10px 0;
+        color: #959595;
+    }
+}
+
+.ah-logo-bg{
+    height: 75%;
+    position: absolute;
+    margin-left: -40rem;
+    margin-top: -2rem;
+    z-index: 0;
+}
+
+.footer-social{
+    background-color: #303030;
+    z-index: 100;
+    position: relative;
+
+    img{
+        cursor: pointer;
+    }
 }

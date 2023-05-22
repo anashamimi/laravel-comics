@@ -264,5 +264,55 @@ return [
             'text' => 'shop',
             'current' => false
         ]
+    ],
+
+    'merhandises' => [
+        [
+            'img' => 'buy-comics-digital-comics.png',
+            'text' => 'digital comics'
+        ],
+
+        [
+            'img' => 'buy-comics-merchandise.png',
+            'text' => 'dc merchandise'
+        ],
+
+        [
+            'img' => 'buy-comics-subscriptions.png',
+            'text' => 'subscription'
+        ],
+
+        [
+            'img' => 'buy-comics-shop-locator.png',
+            'text' => 'comic shop locator'
+        ],
+
+        [
+            'img' => 'buy-dc-power-visa.svg',
+            'text' => 'dc power visa'
+        ]
+    ],
+
+    'socials' => [
+        [
+            'image' => 'footer-facebook.png',
+            'text' => 'facebook'
+        ],
+        [
+            'image' => 'footer-twitter.png',
+            'text' => 'twitter'
+        ],
+        [
+            'image' => 'footer-youtube.png',
+            'text' => 'youtube'
+        ],
+        [
+            'image' => 'footer-pinterest.png',
+            'text' => 'pinterest'
+        ],
+        [
+            'image' => 'footer-periscope.png',
+            'text' => 'periscope'
+        ]
     ]
 ];
