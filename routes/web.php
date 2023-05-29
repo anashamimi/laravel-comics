@@ -21,7 +21,7 @@ Route::get('/', function () {
         'socials' => config('db.socials')
     ];
     return view('home', $data);
-});
+})->name('home');
 
 Route::get('/comics/{id}', function ($id) {
 
@@ -40,6 +40,10 @@ Route::get('/comics/{id}', function ($id) {
     }
 
 })->name('products.comic');
+
+Route::get('/comics', function(){
+    return redirect()->route('home');
+});
 
 
 

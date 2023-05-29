@@ -61,7 +61,7 @@ ul{
 
 .ah-jumbotron{
     height: 20rem;
-    background-image: url('../img/jumbotron.jpg');
+    background-image: url('/public/img/jumbotron.jpg');
     background-size: cover;
 
     img{
@@ -87,7 +87,7 @@ ul{
 }
 
 footer{
-    background-image: url('../img/footer-bg.jpg');
+    background-image: url('/public/img/footer-bg.jpg');
     background-size: cover;
     position: relative;
 }

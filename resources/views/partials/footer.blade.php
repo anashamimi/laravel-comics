@@ -79,7 +79,7 @@
                             <p class="text-uppercase fs-5 text-primary fw-bold">follow us</p>
                             @foreach ($socials as $social)
                                 <div>
-                                    <img src="../../public/images/{{$social['image']}}" alt="social.text">
+                                    <img src="/img/{{$social['image']}}" alt="social.text">
                                 </div>
                             @endforeach
 
