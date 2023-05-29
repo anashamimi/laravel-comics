@@ -16,7 +16,7 @@
                     <div class="col-12 col-sm-6 col-md-4 col-lg-2 gy-5">
                         <div class="ah-card">
                             <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
-                            <a class="text-white text-decoration-none" href="{{ route('products.comic', ['id' => $loop->index]) }}">{{$comic['series']}}</a>
+                            <a class="text-white text-decoration-none" href="{{ route('comics.show', ['comic' => $loop->index]) }}">{{$comic['series']}}</a>
                     </div>
                     </div>
                 @endforeach
@@ -24,7 +24,7 @@
             </div>
 
             <div class="p-5 d-flex justify-content-center">
-                <button type="button" class="btn btn-primary rounded-0 px-5 text-uppercase">load more</button>
+                <a href="{{route('comics.create')}}" type="button" class="btn btn-primary rounded-0 px-5 text-uppercase">ADD COMIC</a>
             </div>
         </div>
 @endsection

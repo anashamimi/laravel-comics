@@ -2,12 +2,12 @@
     <div class="bg-primary text-white py-5">
         <div class="container">
             <ul class="d-flex justify-content-around align-items-center">
-                @foreach ($merhandises as $merhandise)
+                {{-- @foreach ($merhandises as $merhandise)
                     <li class="d-flex align-items-center gap-2">
                         <img src="../../img/{{$merhandise['img']}}" alt="{{ $merhandise['text'] }}">
                         <p>{{ $merhandise['text'] }}</p>
                     </li>
-                @endforeach
+                @endforeach --}}
             </ul>
         </div>
     </div>
@@ -77,11 +77,11 @@
 
                         <div class="d-flex gap-3 align-items-center">
                             <p class="text-uppercase fs-5 text-primary fw-bold">follow us</p>
-                            @foreach ($socials as $social)
+                            {{-- @foreach ($socials as $social)
                                 <div>
                                     <img src="/img/{{$social['image']}}" alt="social.text">
                                 </div>
-                            @endforeach
+                            @endforeach --}}
 
                         </div>
                     </div>
