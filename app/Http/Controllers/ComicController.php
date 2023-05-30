@@ -41,7 +41,8 @@ class ComicController extends Controller
         $newComic = new Comic();
         $newComic->fill($form_data);
         $newComic->save();
-        return redirect()->route('comics.show', $newComic->id);
+        return redirect()->route('comics.show', $newComic->id)->with('message', "Il comic
+        {$newComic->id} è stato aggiunto correttamente");
     }
 
     /**
@@ -63,7 +64,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        //
+        return view('comics.edit', compact('comic'));
     }
 
     /**
@@ -73,9 +74,14 @@ class ComicController extends Controller
      * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comic $comic)
+    public function update(Request $request, $id)
     {
-        //
+        $form_data = $request->all();
+
+        $comic = Comic::findOrFail($id);
+        $comic->update($form_data);
+        return redirect()->route('comics.show', $comic->$id);
+
     }
 
     /**
@@ -86,6 +92,8 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
-        //
+        $comic->delete();
+        return redirect()->route('home')->with('message-delete', "Hai cancellato
+        correttamente il comic {$comic->id}");
     }
 }
